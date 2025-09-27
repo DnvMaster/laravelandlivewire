@@ -16,7 +16,7 @@
             <tr>
                 <th scope="row">{{ $subscriber->id }}</th>
                 <td>{{ $subscriber->name }}</td>
-                <td><a href="{--{ route('edit.subscriber', $subscriber->id) }--}">Изменить</a></td>
+                <td><a href="{{ route('edit.subscriber', $subscriber->id) }}">Изменить</a></td>
                 <td>
                      <button wire:confirm="Вы действительно хотите удалить эту запись?" wire:click="Delete_Subscriber('{{ $subscriber->id }}')">Удалить</button>
                 </td>
