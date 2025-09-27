@@ -14,7 +14,7 @@ class CreateSubscriber extends Component
         Subscriber::create([
             'name' => $this->name,
         ]);
-        return redirect()->back();
+        return redirect(route('read.subscriber'));
     }
 
     public function render()
